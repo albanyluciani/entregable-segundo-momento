@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Layout from "./pages/Layout"
 import Philosophy from "./pages/Philosophy"
 import Gallery from "./pages/Gallery"

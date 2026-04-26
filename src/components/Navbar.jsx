@@ -2,14 +2,22 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <nav className= "flex justify-between items-center border-b-4 pt-[clamp(1.5rem,3vw,2.5rem)] pb-[clamp(1.5rem,3vw,2.5rem)] px-[max(5%,calc((100%-1200px)/2))]">  
-      <a className= "text-2xl semibold tracking-widest uppercase" href="">Zenith Bonsai</a>
-       <div className="flex space-x-6">
-        <a className= "font-normal pb-1 border-b border-transparent hover:border-b-black" href="">Filosofía</a>
-      <a className= "font-normal pb-1 border-b border-transparent hover:border-b-black" href="">Galería</a>
-      <a className= "font-normal pb-1 border-b border-transparent hover:border-b-black" href="">Reservas</a>
+    <nav className="flex items-center justify-between border-b border-[#d8d6d1] px-[max(5%,calc((100%-1160px)/2))] py-[clamp(1.45rem,2.6vw,2.2rem)]">
+      <Link to="/" className="text-[2.1rem] font-semibold leading-none tracking-[0.14em] uppercase text-[#243026]">
+        Zenith Bonsai
+      </Link>
+      <div className="flex items-center gap-10 text-[1.12rem] text-[#223126]">
+        <Link className="border-b border-transparent pb-1 transition-colors hover:border-[#223126]" to="/philosophy">
+          Filosofía
+        </Link>
+        <Link className="border-b border-transparent pb-1 transition-colors hover:border-[#223126]" to="/gallery">
+          Galería
+        </Link>
+        <Link className="border-b border-transparent pb-1 transition-colors hover:border-[#223126]" to="/booking">
+          Reservas
+        </Link>
       </div>
-    </nav>  
+    </nav>
   )
 }
 
