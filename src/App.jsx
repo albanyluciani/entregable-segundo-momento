@@ -3,7 +3,7 @@ import { BrowserRouter, Routes } from "react-router-dom"
 import Layout from "./pages/Layout"
 import Philosophy from "./pages/Philosophy"
 import Gallery from "./pages/Gallery"
-import Booking from "./pages/Booking"
+import Booking from "./pages/BookingFormPage"
 
 function App() {
  

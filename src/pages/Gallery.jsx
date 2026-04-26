@@ -1,3 +1,15 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Cards from "../components/Cards";
+
+const listBonsai = [
+  { id: 1, name: "Arce Japonés" },
+  { id: 2, name: "Pino Negro" },
+  { id: 3, name: "Ficus Retusa" },
+  { id: 4, name: "Olmo Chino" },
+  { id: 5, name: "Enebro"},
+  { id: 6, name: "Azalea"}
+];
 
 const Gallery = () => {
   return (
@@ -14,7 +26,7 @@ const Gallery = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {
             listBonsai.map((bonsai)=>(
-              <CardGrid key={bonsai.id} name={bonsai.name}/>
+              <Cards key={bonsai.id} name={bonsai.name}/>
             ))
           }
 
